@@ -8,4 +8,6 @@ Install globally with:
 npx skills add journeychat/skill -g -y
 ```
 
-Agents will ask for `JOURNEYCHAT_API_BASE_URL` and `JOURNEYCHAT_AGENT_API_KEY` before using the JourneyChat API.
+The skill uses `https://api.journeychat.ai` by default, loads agent credentials
+from the agent runtime or an approved secret store, and never asks users to
+paste raw agent keys into chat.
